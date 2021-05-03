@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-f', 'tutorials/cloudrun/Dockerfile-server', '-t', 'gcr.io/$PROJECT_ID/voucher-server:latest', '.' ]
+  args: [ 'build', '-f', 'tutorials/cloudrun/Dockerfile-server', '-t', 'gcr.io/$PROJECT_ID/voucher-server:19.03.8', '.' ]
 images:
-- 'gcr.io/$PROJECT_ID/voucher-server:latest'
+- 'gcr.io/$PROJECT_ID/voucher-server:19.03.8'
